@@ -10,6 +10,12 @@ def clear():
 		os.system('cls') 
 
 os.system("clear")
+os.system("https://github.com/Kodekeras24")
+print("\033[37mWelcome to Zona Blackphanter\033[0m")
+time.sleep(5)
+print("Loading.......")
+
+attemps = 0
 print( """
 \033[1;31m        __/ __/ __/       __/ __/     __/ __/ __/   __/ __/ __/  \033[0m
 \033[1;31m       __/       __/  __/      __/  __/            __/          \033[0m
