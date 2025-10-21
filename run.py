@@ -13,9 +13,14 @@ except ImportError:
 
 def fake_headers():
     header_lines = [
-
-
-f"{Fore.WHITE}",      
+f"{Fore.WHITE}0",
+f"{Fore.WHITE}0",
+f"{Fore.WHITE}0",
+f"{Fore.WHITE}0",
+f"{Fore.WHITE}0",
+f"{Fore.WHITE}",
+f"{Fore.WHITE}",
+f"{Fore.WHITE}",
 f"{Fore.YELLOW}════════════════════════════════════════════════════════════════════════════",
     ]
 
