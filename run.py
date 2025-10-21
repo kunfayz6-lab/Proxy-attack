@@ -1,13 +1,15 @@
 # -*- coding: utf-8 -*-
 #! /usr/bin/python3,11
-‎import os
-‎import time
-‎import socket
-‎import getpass
 ‎import requests as r, os, threading, random, click, fake_headers
-‎from threading import Thread
-‎from fake_headers import Headers
-‎os.system("clear")
+from threading import Thread
+from colorama import Fore, Style, Back
+from fake_headers import Headers
+
+def clear(): 
+	if os.name == 'nt': 
+		os.system('cls') 
+	else: 
+		os.system('clear')
 
 # Clearing the SCREEN
 class colors:
