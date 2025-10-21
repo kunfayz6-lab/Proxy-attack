@@ -10,29 +10,29 @@ init(autoreset=True)
 logging.basicConfig(
     filename='attack.log',
     level=logging.INFO,
-
 os.system("clear")
-os.system("https://github.com/kunfayz6-lab/Shiffin-DDos")
-print("\033[37mWELOCOME TO ZONA PERANG SHIFFIN\033[0m")
+os.system(f"{Fore.CYAN}https://github.com/kunfayz6-lab/Shiffin-DDos")
+print(f"{Fore.YELLOW} WELOCOME TO ZONA PERANG SHIFFIN")
 time.sleep(5)
 print("Loading.......")
 
 attemps = 0
 def display_header():
     header_lines = [
-╔═════╗
-██████║
-       █║
-     █║
-   █║
- █╚════╗
-██████╝
+f"{Fore.GREEN}═════════════════════════════════════════════════════",
+f"{Fore.GREEN} ╔═════╗",
+f"{Fore.GREEN} ██████║",
+f"{Fore.GREEN}        █║",
+f"{Fore.GREEN}      █║",
+f"{Fore.GREEN}    █║",
+f"{Fore.GREEN}  █╚════╗",
+f"{Fore.GREEN} ██████╝",
 		
 
 	]
 while attemps < 100:
-    username = input("\033[32mEnter your username: \033[0m")
-    password = input("\033[31mEnter your password: \033[0m")
+    username = input(f"{Fore.MAGENTA}Enter your username: ")
+    password = input(f"{Fore.MAGENTA}Enter your password: ")
 
     if username == 'kun99' and password == 'kun99':
         print("\033[32m⟩⟩ Hai...! Welcome to zona attack SHIFFIN \033[0m")
