@@ -86,7 +86,7 @@ def main(proxy, url):
 			req = r.get("https://api.proxyscrape.com/?request=displayproxies")
 			array = req.text.split()
 			print(Back.YELLOW+Fore.WHITE+"Found {} new proxies".format(len(array))+Style.RESET_ALL)
-			print({Fore.YELLLOW}"Shiffin {Fore.GREEN}run attack-proxy".format(len(array))+Style.RESET_ALL)
+			print(Back.YELLLOW+"Shiffin Run-Attack-proxy".format(len(array))+Style.RESET_ALL)
 			check_prox(array, url)
 	else:
 		try:
