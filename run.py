@@ -74,6 +74,7 @@ def start_ddos(prox, url, headers, proxies, color):
 @click.command()
 @click.option('--proxy', '-p', help="File with a proxy")
 @click.option('--url', '-u', help="URL")
+print({Fore.WHITE}Shiffin {Fore.WHITE} Attack {Fore.WHITE} Http-proxy {Fore.WHITE} +str(url)+ ))
 def main(proxy, url):
 	
 	if url == None:
