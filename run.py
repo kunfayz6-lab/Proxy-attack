@@ -158,7 +158,7 @@ def main(proxy, url):
 			print("Found {} proxies in {}.\nChecking proxies...".format(len(array), proxy))
 			check_prox(array, url)
 		except FileNotFoundError:
-			print(Fore.RED+"File {} not found.".format(proxy)+Style.RESET_ALL)
+			print(f"\033[32mFile {} not found.\033[0m")
 			exit()
 
 main()
