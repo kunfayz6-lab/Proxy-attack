@@ -85,9 +85,8 @@ def main(proxy, url):
 		while True:
 			req = r.get("https://api.proxyscrape.com/?request=displayproxies")
 			array = req.text.split()
-			print(Back.YELLOW+Fore.WHITE+"Found {} new proxies".format(len(array))+Style.RESET_ALL)
-			print(Back.GREEN+Fore.YELLOW+"Shiffin Run-Attack-proxy".format(len(array))+Style.RESET_ALL)
-			check_prox(array, url)
+			print(Back.YELLOW+Fore.WHITE+"Shiffin Run-Attack Found {} new proxies".format(len(array))+Style.RESET_ALL)
+		    check_prox(array, url)
 	else:
 		try:
 			fx = open(proxy)
