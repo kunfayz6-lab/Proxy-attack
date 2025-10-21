@@ -34,7 +34,7 @@ def check_prox(array, url):
 
 while threading.active_count()>150 :
     time.sleep(5)
-Thread-{threading.start()
+Thread:{threading.get_ident()}
 def __init__(self):
         print("init")
 	
@@ -74,7 +74,7 @@ def start_ddos(prox, url, headers, proxies, color):
 @click.option('--url', '-u', help="URL")
 def main(proxy, url):
 	clear()
-	logo()
+	
 	if url == None:
 		url = input("URL: ")
 	if url[:4] != "http":
