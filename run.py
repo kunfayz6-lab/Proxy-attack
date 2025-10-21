@@ -11,7 +11,7 @@ except ImportError:
     print("Missing deps. Install: pip install requests colorama")
     sys.exit(1)
 
-def display_header():
+def Header():
     header_lines = [
 
 
