@@ -91,7 +91,7 @@ def main(proxy, url):
 		try:
 			fx = open(proxy)
 			array = fx.read().split()
-			print("Shiffin Run-Attack Found {} proxies in {}.\nChecking proxies...".format(len(array), proxy))
+			print(Back.YELLOW+Fore.WHITE+"Shiffin Run-Attack Found {} proxies in {}.\nChecking proxies...".format(len(array), proxy))
 			check_prox(array, url)
 		except FileNotFoundError:
 			print(Fore.RED+"File {} not found.".format(proxy)+Style.RESET_ALL)
