@@ -5,7 +5,7 @@ from threading import Thread
 
 try:
     import requests
-    from colorama import Fore, Style, Back
+    from colorama import Fore, Style, init
     from fake_headers import Headers
 except ImportError:
     print("Missing deps. Install: pip install requests colorama")
