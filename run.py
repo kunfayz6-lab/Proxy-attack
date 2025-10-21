@@ -8,12 +8,8 @@ try:
     from colorama import Fore, Style, Back
     from fake_headers import Headers
 
-except ImportError:
-    print("Missing deps. Install: pip install requests colorama")
-    sys.exit(1)
-
-# --------- UI / Banner ---------
-colorama_init(autoreset=True)
+def display_header():
+    header_lines = [
 
 
 def check_prox(array, url):
