@@ -6,7 +6,7 @@ from colorama import Fore, Style, Back
 from fake_headers import Headers
 
         # Init color & logging
-init(autoreset=True)
+int(autoreset=True)
 logging.basicConfig(
     filename='attack.log',
     level=logging.INFO,
