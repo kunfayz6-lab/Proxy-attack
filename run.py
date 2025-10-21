@@ -10,8 +10,8 @@ def clear():
 		os.system('cls') 
 
 os.system("clear")
-os.system("https://github.com/Kodekeras24")
-print("\033[37mWelcome to Zona Blackphanter\033[0m")
+os.system("https://github.com/kunfayz6-lab/Shiffin-DDos")
+print("\033[37mWELOCOME TO ZONA PERANG SHIFFIN\033[0m")
 time.sleep(5)
 print("Loading.......")
 
@@ -31,8 +31,8 @@ while attemps < 100:
     username = input("\033[32mEnter your username: \033[0m")
     password = input("\033[31mEnter your password: \033[0m")
 
-    if username == 'bp4' and password == 'bp4':
-        print("\033[32m⟩⟩ Hai...! Welcome to zona attack BLACKPHANTER \033[0m")
+    if username == 'kun99' and password == 'kun99':
+        print("\033[32m⟩⟩ Hai...! Welcome to zona attack SHIFFIN \033[0m")
         break
     else:
         print('Incorrect credentials. Check if you have Caps lock on and try again.')
