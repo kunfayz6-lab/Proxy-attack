@@ -5,12 +5,6 @@ from threading import Thread
 from colorama import Fore, Style, Back
 from fake_headers import Headers
 
-        # Init color & logging
-int(autoreset=True)
-logging.basicConfig(
-    filename='attack.log',
-    level=logging.INFO,
-)
 os.system("clear")
 os.system(f"{Fore.CYAN}https://github.com/kunfayz6-lab/Shiffin-DDos")
 print(f"{Fore.YELLOW} WELOCOME TO ZONA PERANG SHIFFIN")
