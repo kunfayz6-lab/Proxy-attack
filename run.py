@@ -70,7 +70,7 @@ def start_ddos(prox, url, headers, proxies, color):
 		pass
 
 @click.command()
-@click.option('--proxy', '-p', help="File with a proxy")
+@click.option('--proxy', '-p', help="\033[32mFile with a proxy\033[0m")
 @click.option('--url', '-u', help="URL")
 def main(proxy, url):
 	clear()
