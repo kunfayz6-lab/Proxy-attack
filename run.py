@@ -20,6 +20,14 @@ print("Loading.......")
 attemps = 0
 def display_header():
     header_lines = [
+╔═════╗
+██████║
+       █║
+     █║
+   █║
+ █╚════╗
+██████╝
+		
 
 	]
 while attemps < 100:
