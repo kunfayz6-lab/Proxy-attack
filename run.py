@@ -8,8 +8,6 @@ from fake_headers import Headers
 def clear(): 
 	if os.name == 'nt': 
 		os.system('cls') 
-	else: 
-		os.system('clear')
 
 os.system("clear")
 print( """
