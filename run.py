@@ -5,9 +5,11 @@ from threading import Thread
 from colorama import Fore, Style, Back
 from fake_headers import Headers
 
-def clear(): 
-	if os.name == 'nt': 
-		os.system('cls') 
+        # Init color & logging
+init(autoreset=True)
+logging.basicConfig(
+    filename='attack.log',
+    level=logging.INFO,
 
 os.system("clear")
 os.system("https://github.com/kunfayz6-lab/Shiffin-DDos")
@@ -16,17 +18,10 @@ time.sleep(5)
 print("Loading.......")
 
 attemps = 0
-print( """
-\033[1;31m        __/ __/ __/       __/ __/     __/ __/ __/   __/ __/ __/  \033[0m
-\033[1;31m       __/       __/  __/      __/  __/            __/          \033[0m
-\033[1;36m      __/       __/  __/      __/  __/            __/          \033[0m
-\033[1;36m     __/ __/ __/    __/      __/     __/ __/     __/ __/ __/  \033[0m      
-\033[1;35m    __/       __/  __/      __/            __/  __/          \033[0m
-\033[1;35m   __/       __/  __/  __/ __/            __/  __/          \033[0m
-\033[1;32m  __/ __/ __/    __/      __/   __/ __/ __/   __/ __/ __/  \033[0m
-\033[1;34m                                                          \033[0m          
-\033[1;34m    ## BRIGADE ATTACKER SNIPER ELITE ==> internal script By:ZA99\033[0m ##
-""")
+def display_header():
+    header_lines = [
+
+	]
 while attemps < 100:
     username = input("\033[32mEnter your username: \033[0m")
     password = input("\033[31mEnter your password: \033[0m")
