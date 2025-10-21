@@ -10,6 +10,7 @@ try:
 except ImportError:
     print("Missing deps. Install: pip install requests colorama")
     sys.exit(1)
+os.system("clear")
 
 def fake_headers():
     header_lines = [
