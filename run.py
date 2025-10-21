@@ -12,6 +12,11 @@ def display_header():
     header_lines = [
 
 
+f"{Fore.WHITE}",      
+f"{Fore.YELLOW}════════════════════════════════════════════════════════════════════════════",
+    ]
+
+
 def check_prox(array, url):
 	ip = r.post("http://ip.beget.ru/").text
 	for prox in array:
