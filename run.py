@@ -35,13 +35,17 @@ print("""
 ‎\033[96m║\033[95m ——o0o—— \033[96m║
 ‎\033[96m╚════════════════════════════════════════════════
 ‎""")
-‎‎# Password authentication function
-‎def authenticate():
-‎password = "BASe" # The password to access the tool
-‎user_password = getpass.getpass(prompt="\033[1;36mEnter the password to access the tool: \033[0m")
-‎if user_password != password:
-‎print("\033[1;31mIncorrect password. Exiting...\033[0m")
-‎exit()
+while attemps < 100:
+    username = input("\033[32mEnter your username: \033[0m")
+    password = input("\033[31mEnter your password: \033[0m")
+
+    if username == 'qwertyu' and password == 'qwertyu':
+        print("\033[32m⟩⟩ Welcome to zona attack SHIFFIN \033[0m")
+        break
+    else:
+        print('Incorrect credentials. Check if you have Caps lock on and try again.')
+        attemps += 1
+        continue
 ‎
 ‎def check_prox(array, url):
 ‎	ip = r.post("http://ip.beget.ru/").text
