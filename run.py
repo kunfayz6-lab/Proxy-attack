@@ -60,8 +60,8 @@ class colors:
     GOLD = '\033[38;5;220m' 
 
 os.system("clear")
-os.system(f"{Fore.CYAN}https://github.com/kunfayz6-lab/Shiffin-DDos")
-print(f"{Fore.YELLOW} WELOCOME TO ZONA PERANG SHIFFIN")
+os.system(f"\033[33mhttps://github.com/kunfayz6-lab\033[0m")
+print(f"\033[38;5;242mWELOCOME TO ZONA PERANG SHIFFIN\033[0m")
 time.sleep(5)
 print("Loading.......")
 
@@ -143,7 +143,7 @@ def main(proxy, url):
 	if url == None:
 		url = input("URL: ")
 	if url[:4] != "http":
-		print(Fore.RED+"Enter the full URL (example: http*://****.**/)"+Style.RESET_ALL)
+		print(f"\033[33mEnter the full URL (example: http*://****.**/)\033[0m")
 		exit()
 	if proxy == None:
 		while True:
