@@ -10,6 +10,7 @@ init(autoreset=True)
 logging.basicConfig(
     filename='attack.log',
     level=logging.INFO,
+)
 os.system("clear")
 os.system(f"{Fore.CYAN}https://github.com/kunfayz6-lab/Shiffin-DDos")
 print(f"{Fore.YELLOW} WELOCOME TO ZONA PERANG SHIFFIN")
