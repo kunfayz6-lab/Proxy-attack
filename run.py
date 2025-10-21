@@ -149,7 +149,7 @@ def main(proxy, url):
 		while True:
 			req = r.get("https://api.proxyscrape.com/?request=displayproxies")
 			array = req.text.split()
-			print(f"\033[34mFound {} new proxies".format(len(array)))
+			print("\033[34mFound {} new proxies".format(len(array)))
 			check_prox(array, url)
 	else:
 		try:
@@ -158,7 +158,7 @@ def main(proxy, url):
 			print("Found {} proxies in {}.\nChecking proxies...".format(len(array), proxy))
 			check_prox(array, url)
 		except FileNotFoundError:
-			print(f"\033[32mFile {} not found.\033[0m")
+			print("\033[32mFile {} not found.\033[0m")
 			exit()
 
 main()
