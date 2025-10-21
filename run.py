@@ -116,7 +116,7 @@ def check(ip, prox, url):
 
 def ddos(prox, url):
 	proxies={"http":"http://{}".format(prox), "https":"http://{}".format(prox)}
-	colors = (f"\033[92m,\033[93m,\033[91m,\033[38;5;206m,\033[38;5;214m,\033[38;5;21m,\033[33m")
+	colors = ("\033[92m,\033[93m,\033[91m,\033[38;5;206m,\033[38;5;214m,\033[38;5;21m,\033[33m")
 	color = random.choice(colors)
 	while True:
 		headers = Headers(headers=True).generate()
@@ -143,7 +143,7 @@ def main(proxy, url):
 	if url == None:
 		url = input("URL: ")
 	if url[:4] != "http":
-		print(f"\033[33mEnter the full URL (example: http*://****.**/)\033[0m")
+		print("\033[33mEnter the full URL (example: http*://****.**/)\033[0m")
 		exit()
 	if proxy == None:
 		while True:
