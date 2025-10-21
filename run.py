@@ -61,6 +61,12 @@ class colors:
     OCEAN_BLUE = '\033[38;5;21m'  
     GOLD = '\033[38;5;220m' 
 
+
+os.system("https://github.com/Kodekeras24")
+print("\033[37mWelcome to Zona Blackphanter\033[0m")
+time.sleep(5)
+print("Loading.......")
+
 attemps = 0
 os.system("clear")
 print("""
