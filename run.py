@@ -138,7 +138,6 @@ def start_ddos(prox, url, headers, proxies, color):
 @click.option('--proxy', '-p', help="\033[32mFile with a proxy\033[0m")
 @click.option('--url', '-u', help="URL")
 def main(proxy, url):
-	clear()
 	
 	if url == None:
 		url = input("URL: ")
