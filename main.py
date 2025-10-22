@@ -31,7 +31,7 @@ print("""
 """)    
 while attemps < 100:
 	print("\033[96m╔{'═' * 64}╗\033[0m")
-    username = input("║\033[33m your username:          \033[96m║")
+    username = input("║\033[33m your username:          ║")
     print("\033[96m╚{'═'  * 64}╝")
     print("\033[94m╔{'═' * 64}╗")
     password = input("\033[33mEnter your password:            ║")
