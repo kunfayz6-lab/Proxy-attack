@@ -1,3 +1,4 @@
 requests
 click
 fake_headers
+colorama
