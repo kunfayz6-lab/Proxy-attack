@@ -30,12 +30,12 @@ print("""
 \033[38;5;57m╚═════════════════════════════════════════════════════════╝
 """)    
 while attemps < 100:
-    print(f"\033[96m╔{'═' * 64}╗\033[0m")
-    username = input("║\033[33m your username:          ║")
-    print(f"\033[96m╚{'═'  * 64}╝")
-    print(f"\033[94m╔{'═' * 64}╗")
-    password = input("\033[33mEnter your password:            ║")
-    print(f"\033[21m╚{'═'  * 64}╝\033[0m")
+    print(f"\033[96m╔{'═' * 59}╗\033[0m")
+    username = input(║"\033[32m your username:     \033[96m ║")
+    print(f"\033[96m╚{'═'  * 59}╝")
+    print(f"\033[94m╔{'═' * 59}╗")
+    password = input(║"\033[32mEnter your password:        \033[96m ║")
+    print(f"\033[96m╚{'═'  * 59}╝\033[0m")
     if username == 'myname' and password == 'prokun33':
         print("\033[32m⟩⟩ Welcome to zona attack PROXY \033[0m")
         break
