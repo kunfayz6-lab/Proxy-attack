@@ -11,7 +11,7 @@ os.system("clear")
 os.system("\033[34mKunFayz99")
 print("\033[38;5;206mWELCOME TO ZONA ATTACK SHIFFIN")
 time.sleep(5)
-print("\033Loading.......")
+print("\033[38;5;220mLoading.......")
 
 attemps = 0
 os.system("clear")
