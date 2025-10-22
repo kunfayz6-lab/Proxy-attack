@@ -8,10 +8,10 @@ from fake_headers import Headers
 import time
 
 os.system("clear")
-os.system("\033[33mhttps://github.com/kunfayz6-lab")
-print("\033[33mWELCOME TO ZONA ATTACK SHIFFIN")
+os.system("\032[33mhttps://github.com/kunfayz6-lab")
+print("\033[32mWELCOME TO ZONA ATTACK PROXY")
 time.sleep(5)
-print("\033[38;5;21mLoading.......")
+print("\033[32mLoading.......")
 
 attemps = 0
 os.system("clear")
