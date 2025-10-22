@@ -11,19 +11,10 @@ except ImportError:
     print("Missing deps. Install: pip install requests colorama")
     sys.exit(1)
 os.system("clear")
+print("""
 
-def fake_headers():
-    header_lines = [
-f"{Fore.WHITE}0",
-f"{Fore.WHITE}0",
-f"{Fore.WHITE}0",
-f"{Fore.WHITE}0",
-f"{Fore.WHITE}0",
-f"{Fore.WHITE}",
-f"{Fore.WHITE}",
-f"{Fore.WHITE}",
 f"{Fore.YELLOW}════════════════════════════════════════════════════════════════════════════",
-    ]
+""")    
 
 
 def check_prox(array, url):
@@ -86,14 +77,12 @@ def main(proxy, url):
 			array = req.text.split()
 			print(Back.YELLOW+Fore.WHITE+"Found {} new proxies".format(len(array))+Style.RESET_ALL)
 			check_prox(array, url)
-			print(Fore.BLUE+"Shiffin checking-proxy"+Style.RESET_ALL)
 	else:
 		try:
 			fx = open(proxy)
 			array = fx.read().split()
 			print("Found {} proxies in {}.\nChecking proxies...".format(len(array), proxy))
 			check_prox(array, url)
-			print(Fore.BLUE+"Shiffin checking-proxy"+Style.RESET_ALL)
 		except FileNotFoundError:
 			print(Fore.RED+"File {} not found.".format(proxy)+Style.RESET_ALL)
 			exit()
