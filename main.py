@@ -30,8 +30,8 @@ print("""
 \033[38;5;57m╚═════════════════════════════════════════════════════════╝
 """)    
 while attemps < 100:
-    username = input("\033[32mEnter your username: \033[0m")
-    password = input("\033[31mEnter your password: \033[0m")
+    username = input("\033[33mEnter your username: \033[0m")
+    password = input("\033[33mEnter your password: \033[0m")
 
     if username == 'qwertyu' and password == 'prokun33':
         print("\033[32m⟩⟩ Welcome to zona attack PROXY \033[0m")
