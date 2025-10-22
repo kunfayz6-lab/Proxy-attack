@@ -84,14 +84,16 @@ def main(proxy, url):
 		while True:
 			req = r.get("https://api.proxyscrape.com/?request=displayproxies")
 			array = req.text.split()
-			print(Back.YELLOW+Fore.WHITE+"Shiffin run-attack Found {} new proxies".format(len(array))+Style.RESET_ALL)
+			print(Back.YELLOW+Fore.WHITE+"Found {} new proxies".format(len(array))+Style.RESET_ALL)
 			check_prox(array, url)
+			print(Fore.BLUE+"Shiffin checking-proxy"+Style.RESET_ALL)
 	else:
 		try:
 			fx = open(proxy)
 			array = fx.read().split()
-			print("Shiffin run-attack Found {} proxies in {}.\nChecking proxies...".format(len(array), proxy))
+			print("Found {} proxies in {}.\nChecking proxies...".format(len(array), proxy))
 			check_prox(array, url)
+			print(Fore.BLUE+"Shiffin checking-proxy"+Style.RESET_ALL)
 		except FileNotFoundError:
 			print(Fore.RED+"File {} not found.".format(proxy)+Style.RESET_ALL)
 			exit()
