@@ -11,7 +11,7 @@ os.system("clear")
 os.system("\033[33mhttps://github.com/kunfayz6-lab")
 print("\033[33mWELCOME TO ZONA ATTACK SHIFFIN")
 time.sleep(5)
-print("\033[4mLoading.......")
+print("\033[38;5;21mLoading.......")
 
 attemps = 0
 os.system("clear")
