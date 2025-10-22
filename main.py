@@ -37,7 +37,7 @@ while attemps < 100:
     password = input("\033[32m└> Enter your password]••>  \033[0m")
     print(f"\033[97m╚{'═'  * 59}╝\033[0m")
     if username == 'myname' and password == 'prokun33':
-        print("\033[32m┌[KunFayz•••\033[0m")
+        print("\033[32m┌[KunFayz-----\033[0m")
         print("\033[32m└>•• Welcome to zona attack PROXY \033[0m")
         break
     else:
@@ -95,7 +95,7 @@ def start_ddos(prox, url, headers, proxies, color):
 @click.option('--url', '-u', help="URL")
 def main(proxy, url):
 	if url == None:
-		print("\033[32m┌[KunFayz•••\033[0m")
+		print("\033[32m┌[KunFayz-----\033[0m")
 		url = input("\033[32m└>••URL: \033[97m")
 	if url[:4] != "http":
 		print(Fore.RED+"Enter the full URL (example: http*://****.**/)"+Style.RESET_ALL)
