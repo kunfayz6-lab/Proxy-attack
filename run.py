@@ -19,7 +19,17 @@ print("""
 
 \033[38;5;206m════════════════════════════════════════════════════════════════════════════",
 """)    
+while attemps < 100:
+    username = input("\033[32mEnter your username: \033[0m")
+    password = input("\033[31mEnter your password: \033[0m")
 
+    if username == 'qwertyu' and password == 'qwertyu':
+        print("\033[32m⟩⟩ Hai...! Welcome to zona attack BLACKPHANTER \033[0m")
+        break
+    else:
+        print('Incorrect credentials. Check if you have Caps lock on and try again.')
+        attemps += 1
+        continue
 
 def check_prox(array, url):
 	ip = r.post("http://ip.beget.ru/").text
