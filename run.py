@@ -2,14 +2,18 @@
 # -*- coding: utf-8  -*-
 import requests as r, os, threading, random, click, fake_headers
 from threading import Thread
+import requests
+from colorama import Fore, Style, Back
+from fake_headers import Headers
+import time
 
-try:
-    import requests
-    from colorama import Fore, Style, Back
-    from fake_headers import Headers
-except ImportError:
-    print("Missing deps. Install: pip install requests colorama")
-    sys.exit(1)
+os.system("clear")
+os.system("\033[34mKunFayz99")
+print("\033[38;5;206mWELCOME TO ZONA ATTACK SHIFFIN")
+time.sleep(5)
+print("\033Loading.......")
+
+attemps = 0
 os.system("clear")
 print("""
 
