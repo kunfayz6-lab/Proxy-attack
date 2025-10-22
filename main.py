@@ -31,10 +31,10 @@ print("""
 """)    
 while attemps < 100:
     print(f"\033[31m╔{'═' * 59}╗\033[0m")
-    username = input("\033[32m║••>Your username]••>  \033[0m")
+    username = input("\033[32m└> Your username]••>  \033[0m")
     print(f"\033[31m╚{'═'  * 59}╝")
     print(f"\033[97m╔{'═' * 59}╗")
-    password = input("\033[32m║••>Enter your password]••>  \033[0m")
+    password = input("\033[32m└> Enter your password]••>  \033[0m")
     print(f"\033[97m╚{'═'  * 59}╝\033[0m")
     if username == 'myname' and password == 'prokun33':
         print("\033[32m┌[KunFayz•••\033[0m")
@@ -96,7 +96,7 @@ def start_ddos(prox, url, headers, proxies, color):
 def main(proxy, url):
 	if url == None:
 		print("\033[32m┌[KunFayz•••\033[0m")
-		url = input("\033[32m└>••URL: ")
+		url = input("\033[32m└>••URL: \033[97m")
 	if url[:4] != "http":
 		print(Fore.RED+"Enter the full URL (example: http*://****.**/)"+Style.RESET_ALL)
 		exit()
