@@ -8,15 +8,15 @@ from fake_headers import Headers
 import time
 
 os.system("clear")
-os.system("\033[34mKunFayz99")
-print("\033[38;5;206mWELCOME TO ZONA ATTACK SHIFFIN")
+os.system("\033[33mhttps://github.com/kunfayz6-lab")
+print("\033[33mWELCOME TO ZONA ATTACK SHIFFIN")
 time.sleep(5)
-print("\033[38;5;220mLoading.......")
+print("\033[4mLoading.......")
 
 attemps = 0
 os.system("clear")
 print("""
-'\033[38;5;57m══════════════════════════════════════════════════════════════════════════
+\033[38;5;57m══════════════════════════════════════════════════════════════════════════
 \[38033;5;206m
 \[38033;5;206m
 \[38033;5;206m
