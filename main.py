@@ -12,10 +12,10 @@ from fake_headers import Headers
 import time
 
 os.system("clear")
-os.system("\033[33mhttps://github.com/kunfayz6-lab")
-print("\033[32mWELCOME TO ZONA ATTACK PROXY")
+print("\033[32mSHOULD NOT BE USED TO ATTACK GOVERNMENT SITES")
 time.sleep(5)
 print("\033[32mLoading.......")
+time.sleep(5)
 
 attemps = 0
 os.system("clear")
@@ -40,7 +40,7 @@ while attemps < 100:
     print(f"\033[97m╔{'═' * 59}╗")
     password = input("\033[32m└> Enter your password]••>  \033[0m")
     print(f"\033[97m╚{'═'  * 59}╝\033[0m")
-    if username == 'myname' and password == 'prokun33':
+    if username == 'kun' and password == 'fayz':
         print("\033[32m┌[KunFayz————]\033[0m")
         print("\033[32m└>•• Welcome to zona attack PROXY \033[0m")
         break
