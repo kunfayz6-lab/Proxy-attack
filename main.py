@@ -35,8 +35,8 @@ print("""
 """)    
 # Versi dan URL
 print(f"\033[97m╔{'═' * 60}╗")
-print(f"\033[97m║ \033[104m{' ' * 4}v.1.0{' ' * 49}\033[0m ║")
-print(f"\033[97m║ \033[104m{' ' * 4}https://www.https//kunkaffa@gmail.com{' ' * 17}\033[0m ║")
+print(f"\033[97m║\033[104m{' ' * 4}v.1.0{' ' * 49}  \033[0m║")
+print(f"\033[97m║\033[104m{' ' * 4}https://www.https//kunkaffa@gmail.com{' ' * 17}  \033[0m║")
 print(f"\033[97m╚{'═' * 60}╝")
 
 def check_prox(array, url):
