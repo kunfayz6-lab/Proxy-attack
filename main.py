@@ -1,6 +1,10 @@
 #!/usr/bin/python3
 # -*- coding: utf-8  -*-
-import requests as r, os, threading, random, click, fake_headers
+import requests as r, fake_headers
+import os 
+import threading
+import random
+import click
 from threading import Thread
 import requests
 from colorama import Fore, Style, Back
