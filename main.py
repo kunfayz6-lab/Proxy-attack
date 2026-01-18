@@ -33,21 +33,11 @@ print("""
 \033[38;5;57m║\033[38;5;206m                                                           \033[38;5;57m║
 \033[38;5;57m╚═══════════════════════════════════════════════════════════╝
 """)    
-while attemps < 100:
-    print(f"\033[31m╔{'═' * 59}╗\033[0m")
-    username = input("\033[32m└> Your username]••>  \033[0m")
-    print(f"\033[31m╚{'═'  * 59}╝")
-    print(f"\033[97m╔{'═' * 59}╗")
-    password = input("\033[32m└> Enter your password]••>  \033[0m")
-    print(f"\033[97m╚{'═'  * 59}╝\033[0m")
-    if username == 'kun' and password == 'fayz':
-        print("\033[32m┌[KunFayz————]\033[0m")
-        print("\033[32m└>•• Welcome to zona attack PROXY \033[0m")
-        break
-    else:
-        print('Incorrect credentials. Check if you have Caps lock on and try again.')
-        attemps += 1
-        continue
+# Versi dan URL
+print(f"\033[97m╔{'═' * 60}╗")
+print(f"\033[97m║ \033[104m{' ' * 4}v.1.0{' ' * 49}\033[0m ║")
+print(f"\033[97m║ \033[104m{' ' * 4}https://www.https//kunkaffa@gmail.com{' ' * 17}\033[0m ║")
+print(f"\033[97m╚{'═' * 60}╝")
 
 def check_prox(array, url):
 	ip = r.post("http://ip.beget.ru/").text
@@ -109,8 +99,8 @@ def main(proxy, url):
 		while True:
 			req = r.get("https://api.proxyscrape.com/?request=displayproxies")
 			array = req.text.split()
-			print(Back.YELLOW+Fore.WHITE+"Found {} new proxies".format(len(array))+Style.RESET_ALL)
-			print("\033[104m\033[37m" +str(url)+ "\033[0m \033[33mProssecing 0n")
+			print(Back.YELLOW+Fore.WHITE+"••>Found {} new proxies".format(len(array))+Style.RESET_ALL)
+			print("\033[104m\033[37m" +str(url)+ "\033[0m \033[32mProssecing 0n")
 			check_prox(array, url)
 	else:
 		try:
@@ -118,6 +108,7 @@ def main(proxy, url):
 			array = fx.read().split()
 			print("Found {} proxies in {}.\nChecking proxies...".format(len(array), proxy))
 			check_prox(array, url)
+			print("\033[104m\033[37m" +str(url)+ "\033[0m \033[32mProssecing 0n")
 		except FileNotFoundError:
 			print(Fore.RED+"File {} not found.".format(proxy)+Style.RESET_ALL)
 			exit()
