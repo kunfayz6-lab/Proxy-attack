@@ -49,6 +49,7 @@ def check_prox(array, url):
 
 while threading.active_count()>150 :
     time.sleep(5)
+	print("\033[104m\033[37m" +str(url)+ "\033[0m \033[37mProssecing 0n")
 Thread:{threading.get_ident()}
 def __init__(self):
         print("init")
@@ -107,7 +108,6 @@ def main(proxy, url):
 			fx = open(proxy)
 			array = fx.read().split()
 			print("Found {} proxies in {}.\nChecking proxies...".format(len(array), proxy))
-			print("\033[104m\033[37m" +str(url)+ "\033[0m \033[37mProssecing 0n")
 			check_prox(array, url)
 		except FileNotFoundError:
 			print(Fore.RED+"File {} not found.".format(proxy)+Style.RESET_ALL)
