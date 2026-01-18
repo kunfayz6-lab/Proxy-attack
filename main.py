@@ -91,7 +91,7 @@ def start_ddos(prox, url, headers, proxies, color):
 		req = s.get(url, headers=headers, proxies=proxies)
 		if req.status_code == 200:
 			print(color+"{}".format(prox))
-			print("\033[104m\033[37m" +str(url)+ "\033[33mProssecing 0n")
+			print("\033[104m\033[37m" +str(url)+ "\033[0m \033[33mProssecing 0n")
 	except:
 		pass
 
@@ -110,7 +110,7 @@ def main(proxy, url):
 			req = r.get("https://api.proxyscrape.com/?request=displayproxies")
 			array = req.text.split()
 			print(Back.YELLOW+Fore.WHITE+"Found {} new proxies".format(len(array))+Style.RESET_ALL)
-			print("\033[104m\033[37m" +str(url)+ "\033[33mProssecing 0n")
+			print("\033[104m\033[37m" +str(url)+ "\033[0m \033[33mProssecing 0n")
 			check_prox(array, url)
 	else:
 		try:
