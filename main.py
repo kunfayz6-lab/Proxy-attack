@@ -71,8 +71,8 @@ def check(ip, prox, url):
 	if ip != ipx:
 		thread_list = []
 		t = threading.Thread (target=ddos, args=(prox, url))
-		print("\033[104m\033[37m" +str(url)+ "\033[0m")
 		thread_list.append(t)
+		print("\033[104m\033[37m" +str(url)+ "\033[33mProssecing 0n")
 		t.start()
 
 def ddos(prox, url):
@@ -110,7 +110,7 @@ def main(proxy, url):
 			req = r.get("https://api.proxyscrape.com/?request=displayproxies")
 			array = req.text.split()
 			print(Back.YELLOW+Fore.WHITE+"Found {} new proxies".format(len(array))+Style.RESET_ALL)
-			print("\033[104m\033[37m" +str(url)+ "\033[0m")
+			print("\033[104m\033[37m" +str(url)+ "\033[33mProssecing 0n")
 			check_prox(array, url)
 	else:
 		try:
